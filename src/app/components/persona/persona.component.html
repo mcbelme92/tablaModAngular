@@ -1,0 +1,20 @@
+<p-table [columns]="cols" [value]="myList2"  >
+    <ng-template pTemplate="caption">
+        Header
+    </ng-template>
+    <ng-template pTemplate="header">
+        <tr>
+            <th *ngFor="let col of cols" [pSortableColumn]="col.field" [pSelectableRow]="col.header"  >
+                {{col.header}}
+                <p-sortIcon [field]="col.field"> </p-sortIcon>
+            </th>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item >
+        <tr  >
+            <td *ngFor="let col of cols" >
+                {{item [col.field]}}</td>
+        </tr>
+    </ng-template>
+</p-table>
