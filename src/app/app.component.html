@@ -6,6 +6,6 @@
     <p>Item Seleccionado con Evenmiter metodo Selected: {{selectedItem}}</p>
     <app-navbar [items]="items2" (selected)="onSelectedItemPint2($event)"></app-navbar>
     <p>Item Seleccionado con Evenmiter metodo Selected2: {{selectedItem2}}</p>
-    <app-persona [myList2]="myList2" ></app-persona>
+    <app-persona [myList2]="myList2" [cols]="headers"></app-persona>
 
 </div>

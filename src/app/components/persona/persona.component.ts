@@ -45,9 +45,7 @@ export class PersonaComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.cols = [
-      { field: "id", header: "Id" },
-    ];
+    
   }
 
   

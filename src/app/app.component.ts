@@ -10,6 +10,11 @@ export class AppComponent {
   title = 'creutilizablec';
   items: string[] = ['one', 'two', 'tree',"four"];
   items2: string[] = ['one', 'two', 'tree', "four"];
+  headers: any[] = [
+    { field: "nombre", header: "Nombre" },
+    { field: "apellido", header: "Apellido" },
+    { field: "telefono", header: "Telefono" }];
+  
   constructor(private primengConfig: PrimeNGConfig) { }
   
   ngOnInit() {
